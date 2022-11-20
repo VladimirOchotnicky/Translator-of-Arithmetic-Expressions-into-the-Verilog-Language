@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.dp.converter">
+  <grid id="27dc6" binding="wrapper" layout-manager="GridLayoutManager" row-count="9" column-count="7" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
+    <margin top="25" left="25" bottom="25" right="25"/>
+    <constraints>
+      <xy x="93" y="7" width="1096" height="464"/>
+    </constraints>
+    <properties>
+      <background color="-858663"/>
+      <font size="20" style="2"/>
+    </properties>
+    <border type="none" title="Prekladač aritmetických výrazov do jazyka Verilog">
+      <font name="Source Code Pro" size="16" style="3"/>
+      <title-color color="-16445611"/>
+    </border>
+    <children>
+      <component id="534d3" class="javax.swing.JTextField" binding="inputName">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7d72a" class="javax.swing.JButton" binding="vytvoritButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Vytvorit"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="97022" class="javax.swing.JLabel" binding="Premenna">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="138" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Názov vstupnej premennej (napr.: a, vstup1)"/>
+        </properties>
+      </component>
+      <component id="2fc20" class="javax.swing.JComboBox" binding="inputtTyp">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="unsigned"/>
+            <item value="signed"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6d318" class="javax.swing.JTextField" binding="inputtBit">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="77" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b9e49" class="javax.swing.JLabel" binding="Hodnota">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="77" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Bitová veľkosť premennej(zadaj číslo)"/>
+        </properties>
+      </component>
+      <component id="fd39d" class="javax.swing.JLabel" binding="ZadajVzorec">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="138" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Zadaj výraz (v tvare napr.: c=a+b)"/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="1beef" class="javax.swing.JTextField" binding="vzorec">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <component id="49ff2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Názov výstupnej premennej (napr.: c, out1)"/>
+        </properties>
+      </component>
+      <component id="ab2cd" class="javax.swing.JTextField" binding="outputtName">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f14db" class="javax.swing.JComboBox" binding="outputtTyp">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="unsigned"/>
+            <item value="signed"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1e2e8" class="javax.swing.JTextField" binding="outputtBit">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="77" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="533a7" class="javax.swing.JButton" binding="potvrdVzorecButt" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Potvrď výraz"/>
+        </properties>
+      </component>
+      <component id="d6f0c" class="javax.swing.JButton" binding="potvrdVstup">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="36" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Potvrď"/>
+        </properties>
+      </component>
+      <component id="fa3fd" class="javax.swing.JButton" binding="potvrdVystup">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="36" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Potvrď"/>
+        </properties>
+      </component>
+      <component id="6f573" class="javax.swing.JComboBox" binding="moznostDosky">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="268" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="ZYNQ-7 ZC702 Evaluation Board"/>
+            <item value="ZynQ UltraScale+ ZCU106 Evaluation Platform"/>
+            <item value="Artix-7 AC701 Evaluation Platform"/>
+            <item value="Spartan-7 SP701 Evaluation Platform"/>
+          </model>
+        </properties>
+      </component>
+      <component id="3ee38" class="javax.swing.JLabel" binding="vyberrDosky">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Výber dosky"/>
+        </properties>
+      </component>
+      <component id="b53eb" class="javax.swing.JLabel" binding="infoInput">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="77" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="4bb79" class="javax.swing.JLabel" binding="infoOutput">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="77" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="7a49f" class="javax.swing.JButton" binding="vytvorSkript">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="38"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4867854"/>
+          <icon value="com/dp/save32.png"/>
+          <text value="Generovanie skriptu"/>
+        </properties>
+      </component>
+      <component id="55160" class="javax.swing.JButton" binding="vytvorDizajn">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5523214"/>
+          <enabled value="true"/>
+          <icon value="com/dp/save32.png"/>
+          <text value="Vegeneruj dizajn"/>
+        </properties>
+      </component>
+      <component id="bae52" class="javax.swing.JButton" binding="vytvorTestbench">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4867854"/>
+          <icon value="com/dp/save32.png"/>
+          <text value="Vygeneruj testbench"/>
+        </properties>
+      </component>
+      <component id="3d273" class="javax.swing.JButton" binding="infoButton">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="com/dp/info.png"/>
+          <text value="Info"/>
+        </properties>
+      </component>
+      <component id="a55e7" class="javax.swing.JButton" binding="cestaNaVytvorenieProjektuButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4867854"/>
+          <text value="Cesta na vytvorenie projektu vo Viavade"/>
+        </properties>
+      </component>
+      <component id="a2e44" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="1"/>
+          <text value="Dátový typ"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

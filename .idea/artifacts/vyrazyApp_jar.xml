@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="vyrazyApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/vyrazyApp_jar</output-path>
+    <root id="archive" name="vyrazyApp.jar">
+      <element id="module-output" name="vyrazyApp" />
+    </root>
+  </artifact>
+</component>
